@@ -1,0 +1,222 @@
+
+
+
+		Web Technologies
+		|
+		html
+		css
+		java script
+		
+
+	Big Picture
+	--------------
+
+				Technology
+				    |
+			----------------------------------
+			|		|		|
+			Standard	Enterprise	Micro	
+			(desktop)	(internet)	mobiles/hand held devices
+		 core java		|		app
+		 python		------------------
+		 |		|		|
+	runs only on one	Web	    Enterprise	
+	machine			|		   |
+			---------------		---------------------------------
+			|	      |		|		|		|
+		     static	    dynamic	session		entities    message
+	advertisement.html		|	|		|persist-DB	|
+	showWelcome.html	    Servlets	--------    |          |	------------
+	home.html		    JSP		|      |    automatic  manual	|	|
+						|      |    autoquries write   sms     mail
+				    ASP.net  stateless stateful		     whatsapp	gmail/hotmail/yahoo
+						|	|
+					bookmyshow	|
+					airindia.com	|
+					|		|
+				search the flights	login
+							to book
+						   the ticket
+					if u dont have userid
+					then register there
+					with ur personal details
+					yourname, birthdate,
+					email, address
+
+
+		mumbai to london    31-12-2023
+		
+		1. 
+		2.
+		3. --- i want to book ticket here 
+	
+			already a member? "login" here
+			not a member yet? "register" here
+
+    hibernate		
+	|		|
+automatically		developer
+written			has to type in
+by an engine		the queries
+
+
+		insert into...
+		update ..
+		delete ....
+		select
+
+
+
+
+		laptop/machine				mobile
+	1. switch one the machine			always on
+	2. boot it					already booted
+	3. open the browser				app is pre-installed
+	4. search for the URL				no search of url
+	5. open the URL					no need to open it
+	6. and then.....ur business			hit the business directly
+
+
+
+
+
+		search movie
+	
+
+				Server machine
+				| html pages are here
+				| searchFlights.html is here
+		------------------
+		|
+		|
+		|
+		|
+	client machine
+	|
+ 	browser(Chrome/firefox/Edge/Safari/Netscape Navigator)
+	|
+http://serverdomain:port/resource
+http://airindia.com/searchFlights.html	
+
+
+	Enter source city : drop dowdn here... select Mumbai/Pune/Delhi
+
+	Enter destination : drop aganin.... select London
+
+	Enter Date : date of journey ..a calendar control..... 31/12/2023
+
+	Enter class : Business /Economy / Room 
+
+	Button -> Search <-- click this button
+
+
+	HTML		CSS		javascript
+	|		|		|
+	view		style		validation
+
+
+
+
+the fundamental unit of coding in html is TAG
+
+
+<html>
+
+	<p>
+		hello
+		this is a para
+	</p>
+
+	Enter name <input type=text    />  </br>
+	Enter age <input type=number />    
+
+</html>
+
+
+
+	Paired TAG
+	Unpaired TAG
+
+
+
+
+
+
+Assignment
+------------
+
+	0. 		home.html
+			|
+		-------------------------------
+		|			
+	  link for searching flights
+		|
+	searchFlights.html
+			|
+		--------------------
+		|
+		link for found Flights.html
+		|
+	 foundFlights.html <-- done
+			|
+		---------------------
+		|
+	 there are so many
+	 "book Flights" buttons
+	CONVERT THESE BUTTONS INTO links
+	and by pressing this link it should jump to
+						|
+				----------------------
+				|
+				login.html
+				|
+			--------------------
+			|		|
+		if not logged in	on press of login link
+		then used should	should jump to
+		jump into registration	|
+		page			dashboard.html
+		register.html		|
+					inside dashboard
+					|
+					welcome user msg to print
+
+
+	interlink all above relevant pages 
+	in such a way so that u can jump
+	from one page to other relevant page
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
