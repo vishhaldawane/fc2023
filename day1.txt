@@ -145,25 +145,23 @@ the fundamental unit of coding in html is TAG
 Assignment
 ------------
 
-	0. 		home.html
+			1. searchFlight.html content 
 			|
-		-------------------------------
-		|			
-	  link for searching flights
+		----------------------------------------------------
+		|				|		|			
+	  inputs for searching flights		sign-in		sign-up
+		|source,target,date etc		|		|
+		--------------------		2.login.html	3.register.html
+		|				(1)		(1)	
+	  on pressing "search flights"
 		|
-	searchFlights.html
-			|
-		--------------------
-		|
-		link for found Flights.html
-		|
-	 foundFlights.html <-- done
+	 4. foundFlights.html <-- done
 			|
 		---------------------
 		|
 	 there are so many
 	 "book Flights" buttons
-	CONVERT THESE BUTTONS INTO links
+	CONVERT THESE BUTTONS INTO href links
 	and by pressing this link it should jump to
 						|
 				----------------------
@@ -180,7 +178,10 @@ Assignment
 					inside dashboard
 					|
 					welcome user msg to print
-
+					|
+					keep "logout" link
+					to jump to
+					searchFlight.html
 
 	interlink all above relevant pages 
 	in such a way so that u can jump
