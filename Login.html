@@ -3,52 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-	<script>
-		alert('welcome to java script1');
-		console.log('welcome to java script1');
-	</script>
 	
 	<script>
-		alert('welcome to java script2');
-		console.log('welcome to java script2');
-
+		//alert('before function');
+		function sampleFunction()
+		{
+			/*alert('welcome to java script1');
+			console.log('welcome to java script1');*/
+			var username=document.getElementById("uname").value;
+			var password=document.getElementById("upass").value;
+			//alert('username is '+username);
+			//alert('password is '+password);
+			if(username=="") { alert('username should not be blank'); return false;}
+			if(password=="") { alert('password should not be blank'); return false;}
+			console.log('username is '+username);
+			console.log('password is '+password);
+			return true;
+		}
+		//alert('after function');
+		
+		
+		function myFunctionA()
+		{
+			alert('hello myFunctionA');
+			
+			return true;
+			
+		}
 	</script>
 	
-	<script>
-		alert('welcome to java script3');
-		console.log('welcome to java script3');
-
-	</script>
+	
 	
 </head>
 <body>
 
-	<script>
-		alert('welcome to java script4');
-		console.log('welcome to java script4');
-
-	</script>
-
 	<h1> Login Here1 </h1>
 	
-	<script>
-		alert('welcome to java script5');
-		console.log('welcome to java script5');
-
-	</script>
+	<form action="MyDashBoard.html">
+				Enter yourname <input type=text id="uname"> <br>
+		
+				<input type=submit value="GO" onclick="return myFunctionA(); " >
+		
+	</form>
 	
-	<h2> Login Here2 </h2>
-	<h3> Login Here3 </h3>
-	
-	<script>
-		alert('welcome to java script6');
-		console.log('welcome to java script6');
-
-	</script>
-	
-	<h4> Login Here4 </h4>
-	<h5> Login Here5 </h5>
-	
-	
+	<form action="MyDashBoard.html">
+		Enter username <input type=text id="uname"> <br>
+		Enter password <input type=password id="upass"> <br>		
+		
+		<!-- <button onclick="sampleFunction()"> Login </button> -->
+		
+		<input type=submit value="Login" onclick="return sampleFunction()" >
+	</form>
+		
 </body>
 </html>
