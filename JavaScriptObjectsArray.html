@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html> 
+9820 44 34 64 vishalviniing@gmail.com
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<script>
+	myemp1 = { employeeNumber:101,employeeName:"John",employeeSalary:5000 }
+		document.write(myemp1.employeeNumber+' ');
+		document.write(myemp1.employeeName+ ' ');
+		document.write(myemp1.employeeSalary);
+		
+		function showEmp() {
+			document.getElementById("empno").innerHTML=myemp1.employeeNumber;
+			document.getElementById("empname").innerHTML=myemp1.employeeName;
+			document.getElementById("empsal").innerHTML=myemp1.employeeSalary;
+		}
+		
+		fruits=["Mango","Apple","Orange"];
+		
+		for(i=0;i<fruits.length;i++) {
+			
+			document.write('<h3>'
+						+ 
+					fruits[i] + 
+				'</h3>');
+		}
+		//MVC
+		//CONTROLLER 
+		//REST API - DATA - MODEL -   CRUD 
+		//java script is acting as a VIEW
+		
+		mydept = [
+			
+			{ 
+				deptNumber:10, 
+				deptName:"Accounts",
+				deptLocation:'New York',
+				
+				mystaff : [
+					{ employeeNumber:101,employeeName:"Bruce",employeeSalary:5000,empImg:'bruce.jpeg' },
+					{ employeeNumber:102,employeeName:"James",employeeSalary:6000,empImg:'james.jpeg' },
+					{ employeeNumber:103,employeeName:"Steve",employeeSalary:7000,empImg:'steve.jpeg' }
+				]
+			},
+
+			{ 
+				deptNumber:20, deptName:"IT",deptLocation:'New Jersey',
+				mystaff : [
+					{ employeeNumber:104,employeeName:"Jack",employeeSalary:2000,empImg:'bruce1.jpeg' },
+					{ employeeNumber:105,employeeName:"Jill",employeeSalary:3000,empImg:'james2.jpeg' },
+					{ employeeNumber:106,employeeName:"Jane",employeeSalary:4000,empImg:'steve3.jpeg' },
+					{ employeeNumber:115,employeeName:"Smith",employeeSalary:4400,empImg:'steve4.jpeg' }
+				]
+			},
+
+			{ 
+				deptNumber:30, 
+				deptName:"Sales",
+				deptLocation:'Chicago',
+				
+				mystaff : [
+					{ 
+						employeeNumber:107,
+						employeeName:"Reeta",
+						employeeSalary:5000,
+						empImg:'bruce4.jpeg',
+						addresses : [
+							 {
+								street: "Kulas Light",
+							    suite: "Apt. 556",
+							    city: "Gwenborough",
+							    zipcode: "92998-3874"
+							},
+							{
+								street: "Kulas Ray",
+							    suite: "Apt. 456",
+							    city: "Gwenborough",
+							    zipcode: "92998-3884"
+							},
+						]
+					},
+					{ employeeNumber:108,employeeName:"Seeta",employeeSalary:6000,empImg:'james5.jpeg' },
+					{ employeeNumber:109,employeeName:"Geeta",employeeSalary:7000,empImg:'steve6.jpeg' }
+				]
+			},
+
+			{ 
+				deptNumber:40, deptName:"Operations",deptLocation:'Dallas',
+				mystaff : [
+					{ employeeNumber:110,employeeName:"Julie",employeeSalary:8000,empImg:'bruce7.jpeg' },
+					{ employeeNumber:111,employeeName:"Julia",employeeSalary:9000,empImg:'james8.jpeg' },
+					{ employeeNumber:112,employeeName:"Silvie",employeeSalary:9500,empImg:'steve9.jpeg' },
+					{ employeeNumber:116,employeeName:"King",employeeSalary:8500,empImg:'steve19.jpeg' },
+					{ employeeNumber:117,employeeName:"Martin",employeeSalary:7500,empImg:'steve29.jpeg' }
+					
+				]
+			},
+
+			
+		];
+		
+		
+		document.write('<table border=5 cellspacing=10 cellpadding=10> '+	
+				'<thead>	<th>Dept No.</th>	<th>Department Name</th>'+
+				'<th>Dept Location</th>'+
+			'</thead>');
+		for(i=0;i<mydept.length;i++) {
+			
+				document.write('<tr>');
+					document.write('<td>'+mydept[i].deptNumber +'</td>');
+					document.write('<td>'+mydept[i].deptName +'</td>');
+					document.write('<td>'+mydept[i].deptLocation +'</td>');
+					//document.write('<td> <img src='+mydept[i].mystaff[j].empImg +' height=200 width=300></td>');
+				
+					document.write("<td>");
+			document.write('<table border=5 cellspacing=10 cellpadding=10> '+	
+					'<thead>	<th>Emp No.</th>	<th>Employee Name</th>'+
+					'<th>Emp Salary</th>'+
+				'</thead>');
+			for(j=0;j<mydept[i].mystaff.length;j++) {
+				document.write('<tr>');
+				document.write('<td>'+mydept[i].mystaff[j].employeeNumber +'</td>');
+				document.write('<td>'+mydept[i].mystaff[j].employeeName +'</td>');
+				document.write('<td>'+mydept[i].mystaff[j].employeeSalary +'</td>');
+				document.write('<td> <img src='+mydept[i].mystaff[j].empImg +' height=200 width=300></td>');
+				document.write('</tr>');
+				
+			}
+			document.write('</table>');
+			document.write("</td>");
+			document.write('</tr>');
+		}
+		
+		document.write('</table>');
+		
+	</script>
+<body>
+	<br>
+	Employee Number is <span id="empno"></span> <br>
+	Employee Name   is <span id="empname"></span> <br>
+	Employee Salary is <span id="empsal"></span> <br>
+	<button onclick="showEmp()">Show Employee</button>
+</body>
+</html>
+
+
+<!-- 
+[
+    {
+        "orderId": 101,
+        "orderDate": "2011-12-26 12:12:00.0",
+        "tableNumber": 1,
+        "foodItem": "Fried Rice",
+        "price": 220.0,
+        "quantity": 2,
+        "total": 440.0
+    },
+    {
+        "orderId": 102,
+        "orderDate": "2011-12-26 13:30:00.0",
+        "tableNumber": 2,
+        "foodItem": "Plain Rice",
+        "price": 120.0,
+        "quantity": 2,
+        "total": 240.0
+    },
+    {
+        "orderId": 103,
+        "orderDate": "2011-12-26 14:30:00.0",
+        "tableNumber": 3,
+        "foodItem": "Daal Rice",
+        "price": 150.0,
+        "quantity": 1,
+        "total": 150.0
+    },
+    {
+        "orderId": 104,
+        "orderDate": "2011-12-26 15:30:00.0",
+        "tableNumber": 4,
+        "foodItem": "Curd Rice",
+        "price": 100.0,
+        "quantity": 3,
+        "total": 300.0
+    },
+    {
+        "orderId": 105,
+        "orderDate": "2011-12-26 16:30:00.0",
+        "tableNumber": 5,
+        "foodItem": "Jeera Rice",
+        "price": 170.0,
+        "quantity": 4,
+        "total": 680.0
+    },
+    {
+        "orderId": 106,
+        "orderDate": "2011-12-26 19:19:00.0",
+        "tableNumber": 7,
+        "foodItem": "Garlic Fried Rice",
+        "price": 350.0,
+        "quantity": 2,
+        "total": 700.0
+    },
+    {
+        "orderId": 109,
+        "orderDate": "2016-12-26 20:20:00.0",
+        "tableNumber": 8,
+        "foodItem": "PANEER PIZZA",
+        "price": 550.0,
+        "quantity": 2,
+        "total": 1100.0
+    }
+] 
+
+Enter first number  [ 10  ] <-mandatory
+Enter second number [  5  ] <-mandatory
+select the operator : drop down list box [ + - * / ]
+based on the selection show the output below
+Calculate <-- button
+The output is  [ 15 ]
+Clear <-- clear the contents
+		
+
+-->
