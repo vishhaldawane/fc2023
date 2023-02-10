@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<script 
+	type="text/javascript" 
+	language="javascript" 
+	src="Login2.js" >
+</script>
+
+<body><form action="UserDashBoard.html">
+Enter username <input type=text id="uname" onKeyUp="clearUserErr()"> 
+<span id="userErr"></span><br>
+Enter password <input type=password id="upass" onKeyUp="clearPassErr()">
+<span id="passErr"></span><br>
+<input type=submit name=submit value="Login" onClick="return validateUser()">
+</form>
+
+</body>
+</html>
